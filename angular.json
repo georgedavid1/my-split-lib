@@ -105,6 +105,130 @@
           }
         }
       }
+    },
+    "lib-one": {
+      "projectType": "library",
+      "root": "projects/lib-one",
+      "sourceRoot": "projects/lib-one/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lib-one/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lib-one/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lib-one/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lib-one/src/test.ts",
+            "tsConfig": "projects/lib-one/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-one/karma.conf.js"
+          }
+        }
+      }
+    },
+    "lib-two": {
+      "projectType": "library",
+      "root": "projects/lib-two",
+      "sourceRoot": "projects/lib-two/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lib-two/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lib-two/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lib-two/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lib-two/src/test.ts",
+            "tsConfig": "projects/lib-two/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-two/karma.conf.js"
+          }
+        }
+      }
+    },
+    "george-library-one": {
+      "projectType": "library",
+      "root": "projects/george-library-one",
+      "sourceRoot": "projects/george-library-one/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/george-library-one/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/george-library-one/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/george-library-one/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/george-library-one/src/test.ts",
+            "tsConfig": "projects/george-library-one/tsconfig.spec.json",
+            "karmaConfig": "projects/george-library-one/karma.conf.js"
+          }
+        }
+      }
+    },
+    "george-library-two": {
+      "projectType": "library",
+      "root": "projects/george-library-two",
+      "sourceRoot": "projects/george-library-two/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/george-library-two/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/george-library-two/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/george-library-two/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/george-library-two/src/test.ts",
+            "tsConfig": "projects/george-library-two/tsconfig.spec.json",
+            "karmaConfig": "projects/george-library-two/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "my-split-lib"

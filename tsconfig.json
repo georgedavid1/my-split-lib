@@ -9,6 +9,24 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "george-library-one": [
+        "dist/george-library-one/george-library-one",
+        "dist/george-library-one"
+      ],
+      "george-library-two": [
+        "dist/george-library-two/george-library-two",
+        "dist/george-library-two"
+      ],
+      "lib-one": [
+        "dist/lib-one/lib-one",
+        "dist/lib-one"
+      ],
+      "lib-two": [
+        "dist/lib-two/lib-two",
+        "dist/lib-two"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
